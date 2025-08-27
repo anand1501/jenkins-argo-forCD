@@ -18,7 +18,7 @@ spec:
         app: flaskdeploy
     spec:
       containers:
-      - image: anand1501/webflask:v1
+      - image: anand1501/webflask:v6
         name: webflask
         imagePullPolicy: Always
         resources: {}
