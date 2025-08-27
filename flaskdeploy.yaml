@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flaskdeploy
+  name: flaskdeploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskdeploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flaskdeploy
+    spec:
+      containers:
+      - image: anand1501/webflask:v1
+        name: webflask
+        imagePullPolicy: Always
+        resources: {}
+status: {}
